@@ -17,7 +17,7 @@ This may include:
 * Account information such as your name, email address, and profile details
 * Images, screenshots, and homework questions uploaded through the app
 * Usage data such as app activity, feature usage, and interaction history
-* Device information, including device type, operating system version, and app performance data
+* Device information, including device type, operating system version, app performance data, IP address, and identifiers that may help us detect abuse, spam, fraud, unauthorized access, or misuse of the platform
 * Subscription and purchase information processed through Apple or authorized payment providers
 
 ---
@@ -31,7 +31,7 @@ We use the collected information to:
 * Personalize responses and app functionality
 * Maintain account functionality and sync user progress
 * Monitor app performance, reliability, and security
-* Prevent abuse, spam, or misuse of the platform
+* Prevent abuse, spam, fraud, unauthorized access, or misuse of the platform, including through moderation and security systems
 * Develop future educational features and tools
 
 Anonymized and aggregated usage data may be used to improve Sparkit’s AI systems and service quality.
