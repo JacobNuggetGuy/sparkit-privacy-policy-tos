@@ -1,0 +1,22 @@
+name: Legal Document Updates
+
+on:
+  push:
+    paths:
+      - 'privacy-policy.md'
+      - 'terms-of-service.md'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send webhook to backend
+        run: |
+          curl -X POST https://YOUR_BACKEND_URL/api/legal-updated \
+          -H "Content-Type: application/json" \
+          -H "Authorization: Bearer ${{ secrets.LEGAL_WEBHOOK_SECRET }}" \
+          -d '{
+            "repository": "${{ github.repository }}",
+            "commit": "${{ github.sha }}"
+          }'
